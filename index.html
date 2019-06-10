@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Blackjack</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <div class = "title">
+    <h1>Welcome To BlackJack</h1>
+  </div>
+  <body>
+
+<div class="wrapper clearfix">
+    <div class="dealer">
+        <div class = "players" id = "dealer"></div>
+        <div class = "names">DEALER</div> 
+        <div class="player-current-box">
+            <div class="label">DEALER</div>
+            <div class="player-current-score" id="dealer-score"></div>
+        </div>
+    </div>
+
+   <div id = "dealerCards">
+      <img src = "cards/cA.png" id = "d5Card">
+      <img src = "cards/dA.png" id = "d4Card">
+      <img src = "cards/cA.png" id = "d3Card">
+      <img src = "cards/hA.png" id = "d2Card">
+      <img src = "cards/sA.png" id = "d1Card">
+   </div>
+
+    <div id = "playerCards">
+      <img src = "cards/hA.png" id = "p5Card">
+      <img src = "cards/hA.png" id = "p4Card">
+      <img src = "cards/hA.png" id = "p3Card">
+      <img src = "cards/sA.png" id = "p2Card">
+      <img src = "cards/da.png" id = "p1Card">
+    </div>
+
+    <div class="player">
+        <div class="players" id = "player"></div>
+        <div class = "names">PLAYER</div> 
+        <div class="player-current-box">
+            <div class="label">PLAYER</div>
+            <div class="player-current-score" id="player-score"></div>
+        </div>
+    </div>
+    
+    
+    <div id = "buttons">
+     <form> <button class = "new" type = "submit">New Game</button></form>
+
+      <button class = "hit" type = "submit" value = "hit-me"> HIT </button>
+    
+      <button class = "hold" type = "submit" value = "hold"> STAND </button>
+    </div>  
+
+  <div class = "status">
+    <h1 id = "status"></h1>
+  </div>
+  <h2 id = "bust"></h2>
+  <h2 id = "got21"></h2>
+</div>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
